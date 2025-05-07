@@ -24,12 +24,19 @@ export default function App() {
     setFilter(event.target.value);
   };
 
+  const filteredContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(filter.toLowerCase())
+  );
+
   return (
     <div>
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox filter={filter} onFilterChange={onFilterChange} />
-      <ContactList contacts={contacts} onDeleteContact={onDeleteContact} />
+      <ContactList
+        contacts={filteredContacts}
+        onDeleteContact={onDeleteContact}
+      />
     </div>
   );
 }
