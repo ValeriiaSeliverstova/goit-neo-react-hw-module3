@@ -20,7 +20,8 @@
 }
 
 .addContactButton {
-  max-width: 100px;
+  margin: 0 auto;
+  width: fit-content;
   padding: 6px 16px;
   background-color: #eee;
   color: #000;
