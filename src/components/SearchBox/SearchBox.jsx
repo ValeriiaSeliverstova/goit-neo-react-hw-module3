@@ -1,6 +1,6 @@
 import css from "./SearchBox.module.css";
 
-export default function SearchBox(filter, onFilterChange) {
+export default function SearchBox({ filter, onFilterChange }) {
   return (
     <div className={css.searchBox}>
       <label htmlFor="filter">Find contacts by name</label>
