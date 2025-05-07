@@ -1,0 +1,18 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.addContactButton {
+  padding: 6px 16px;
+  background-color: #eee;
+  color: #000;
+  border: 2px solid #777;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
