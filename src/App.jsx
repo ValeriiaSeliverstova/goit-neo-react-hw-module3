@@ -4,7 +4,7 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import SearchBox from "./components/SearchBox/SearchBox";
 import ContactList from "./components/ContactList/ContactList";
 
-function App() {
+export default function App() {
   const [contacts, setContacts] = useState([
     { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
     { id: "id-2", name: "Hermione Kline", number: "443-89-12" },
