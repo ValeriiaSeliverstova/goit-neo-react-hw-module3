@@ -4,7 +4,7 @@
   padding: 10px;
   border: 1px solid #333;
   border-radius: 8px;
-  max-width: 300px;
+  width: fit-content;
   justify-content: space-between;
   align-items: center;
 }
@@ -31,4 +31,5 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 30px;
 }
