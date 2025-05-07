@@ -18,11 +18,17 @@ export default function App() {
     );
   };
 
+  const [filter, setFilter] = useState("");
+
+  const onFilterChange = (event) => {
+    setFilter(event.target.value);
+  };
+
   return (
     <div>
       <h1>Phonebook</h1>
       <ContactForm />
-      <SearchBox />
+      <SearchBox filter={filter} onFilterChange={onFilterChange} />
       <ContactList contacts={contacts} onDeleteContact={onDeleteContact} />
     </div>
   );
