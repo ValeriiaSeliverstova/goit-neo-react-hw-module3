@@ -12,6 +12,10 @@ export default function App() {
     { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
   ]);
 
+  const onAddContact = (newContact) => {
+    setContacts((prevContacts) => [...prevContacts, newContact]);
+  };
+
   const onDeleteContact = (idToDelete) => {
     setContacts((prevContacts) =>
       prevContacts.filter((contact) => contact.id !== idToDelete)
@@ -31,7 +35,7 @@ export default function App() {
   return (
     <div>
       <h1>Phonebook</h1>
-      <ContactForm />
+      <ContactForm onAddContact={onAddContact} />
       <SearchBox filter={filter} onFilterChange={onFilterChange} />
       <ContactList
         contacts={filteredContacts}

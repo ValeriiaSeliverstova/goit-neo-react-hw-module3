@@ -2,8 +2,9 @@ import css from "./ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useId } from "react";
+import { nanoid } from "nanoid";
 
-export default function ContactForm() {
+export default function ContactForm({ onAddContact }) {
   const usernameId = useId();
   const numberId = useId();
 
@@ -19,7 +20,12 @@ export default function ContactForm() {
   });
 
   const handleSubmit = (values, actions) => {
-    console.log(values);
+    const newContact = {
+      id: nanoid(),
+      name: values.username,
+      number: values.number,
+    };
+    onAddContact(newContact);
     actions.resetForm();
   };
 
