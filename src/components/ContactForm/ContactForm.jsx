@@ -12,9 +12,9 @@ export default function ContactForm() {
     >
       <Form className={css.contactForm}>
         <label htmlFor="username">Name</label>
-        <Field type="text" name="username" />
+        <Field className={css.input} type="text" name="username" />
         <label htmlFor="number">Number</label>
-        <Field type="tel" name="number" />
+        <Field className={css.input} type="tel" name="number" />
         <button className={css.addContactButton} type="submit">
           Add contact
         </button>
