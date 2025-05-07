@@ -13,6 +13,9 @@
   text-align: left;
 }
 
+.contactName {
+  margin-bottom: 10px;
+}
 .icon {
   width: 15px;
   height: 15px;
