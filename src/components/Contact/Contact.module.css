@@ -1,12 +1,28 @@
 .contact {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
   padding: 10px;
   border: 2px solid #333;
   border-radius: 8px;
+  max-width: 300px;
+  justify-content: space-between;
 }
 
 .contactData {
   text-align: left;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.deleteButton {
+  background-color: #gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
 }

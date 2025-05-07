@@ -7,10 +7,10 @@ export default function Contact({ name, number, onDeleteContact }) {
     <li className={css.contact}>
       <div className={css.contactData}>
         <p className={css.contactName}>
-          <FaUser /> {name}
+          <FaUser className={css.icon} /> {name}
         </p>
         <p className={css.contactNumber}>
-          <FaPhoneAlt />
+          <FaPhoneAlt className={css.icon} />
           {number}
         </p>
       </div>
